@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenhando no Canvas</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Desenhando no Canvas</h1>
+
+    <canvas id="tela" width="800" height="400"></canvas>
+
+    <div class="colorArea">
+        <div data-color="black" style="background-color: black" class="color active"></div>
+        <div data-color="blue" style="background-color: blue" class="color"></div>
+        <div data-color="red" style="background-color: red" class="color"></div>
+        <div data-color="green" style="background-color: green" class="color"></div>
+        <div data-color="yellow" style="background-color: yellow" class="color"></div>
+        <div data-color="gray" style="background-color: gray" class="color"></div>
+        <div data-color="white" style="background-color: white" class="color active"></div>
+    </div>
+    <P>Escolha a espessura de seu traço:</P>
+    <input type="number" name="valor" id="tamanho">
+    <input type="submit" value="aplicar" id="aplicar">
+
+    <button class="clear">Limpar Quadro</button>
+    <p>se precisar apgar algo toque na cor branca funciona como borracha,<br> dica aumente a espessura para apagar mais coisa ou diminua para ser mais preciso </p>
+    <footer>cirado pelo igor com base no projeto da b7web</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

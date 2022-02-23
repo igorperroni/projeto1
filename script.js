@@ -1,4 +1,3 @@
-// initial data
 let currentColor = 'black';
 let canDraw = false;
 let mouseX = 0;
@@ -11,7 +10,7 @@ let clear = document.querySelector('.clear');
 
 
 
-// Events 
+
 document.querySelectorAll('.colorArea .color').forEach(item => {
     item.addEventListener('click', colorClickEvent);
 });
@@ -26,7 +25,7 @@ clear.addEventListener('click', clearScreen);
 
 
 
-// functions
+
 function colorClickEvent(e) {
     let color = e.target.getAttribute('data-color');
     currentColor = color;
